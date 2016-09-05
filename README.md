@@ -1,18 +1,16 @@
 # Noice App
 
-A mix between Mumble and Slack, open-Source and own hosted.
-Inspired by Discord.
+A chat app, open-Source and own hosted.
 
 ## Authors :
 - Seiji Fouquet
 - Jean-Baptiste Nouaille
 - François David
-- Justin Rerolle
 - Léo Champion
 
 ## Technicals :
 - Meteor.js Stack
-- (Audio stream)
+- (Audio stream eventually) 
 
 ## Server :
 - Nginx

@@ -1,0 +1,10 @@
+<template name="friend">
+    <div class="friend row">
+        <div class="col-md-1 col-md-offset-1">
+            <span class="glyphicon glyphicon-record {{#if logged}}online{{else}}offline{{/if}}"></span>
+        </div>
+        <div class="friend-username col-md-8">
+            {{username}}
+        </div>
+    </div>
+</template>

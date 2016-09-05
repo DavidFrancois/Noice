@@ -1,0 +1,13 @@
+<template name="message">
+    <div class="entity row">
+        <div class="avatar col-md-1">
+          <img src="/img/avatars/{{avatar}}" id="viewProfile"></div>
+        <div class="text col-md-10">
+            <div class="infos row">
+                <div class="username col-md-3">{{username}}</div>
+                <div class="col-md-3 col-md-offset-6 text-right">{{formatDate date}}</div>
+            </div>
+            <div class="message row">{{{formatMessage text}}}</div>
+        </div>
+    </div>
+</template>

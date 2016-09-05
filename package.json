@@ -1,0 +1,11 @@
+{
+  "name": "Noice",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "croppie": "^2.1.1",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}

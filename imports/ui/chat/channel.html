@@ -1,0 +1,10 @@
+<template name="channel">
+    <div class="channel row {{#if active}}active{{/if}}">
+        <div class="name col-md-8">
+            <span class="glyphicon glyphicon-menu-{{#if active}}down{{else}}right{{/if}}"></span>{{name}}
+        </div>
+        <div class="nb-logged col-md-2 col-md-offset-2 text-center">
+            {{nbLogged}}
+        </div>
+    </div>
+</template>

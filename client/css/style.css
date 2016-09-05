@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #f4f4f4 inset;
+    -webkit-text-fill-color: #666a73 !important;
+}
+
+@font-face {
+    font-family: 'Avenger';
+    src: url('../fonts/Avenger.eot');
+    src: url('../fonts/Avenger.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Avenger.woff2') format('woff2'),
+    url('../fonts/Avenger.woff') format('woff'),
+    url('../fonts/Avenger.ttf') format('truetype'),
+    url('../fonts/Avenger.svg#Avenger') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SquareFont';
+    src: url('../fonts/SquareFont.eot');
+    src: url('../fonts/SquareFont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SquareFont.woff2') format('woff2'),
+    url('../fonts/SquareFont.woff') format('woff'),
+    url('../fonts/SquareFont.ttf') format('truetype'),
+    url('../fonts/SquareFont.svg#SquareFont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Globals stylesheets*/
+
+.theme-1 {
+    color: #666a73;
+    background-color: #f4f4f4;
+    height: 95vh;
+}
+.theme-1 a {
+    color: #666a73;
+    text-decoration: none;
+    padding: 0;
+    margin-top: -10px;
+}
+.theme-1 a:hover {
+    color: #9b9ea5;
+}
+.theme-1 h1 {
+    font-family: 'Avenger';
+    font-size: 4.4vw;
+}
+.theme-1 h2 {
+    font-family: 'Avenger';
+    background-color: #666a73;
+    color: #f4f4f4;
+    padding: 3px;
+}
+.theme-1 .row {
+    margin: 20px 0;
+}
+.theme-1 .active {
+    color: #53afdd;
+}
+.theme-1 .active:hover {
+    color: #53afdd;
+}
+.theme-1 .error {
+    color: #e5163a;
+}
+.theme-1 .success {
+    color: #18de3d;
+}
+.theme-1 .emoji {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+}
+.theme-1 .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    color: #f4f4f4;
+}
+.btn-primary {
+    font-family: 'SquareFont';
+    background-color: #666a73;
+    border: 0;
+    color: #f4f4f4;
+    height: 30px;
+    padding: 0px 10px;
+}
+.btn .btn-primary:hover, .btn .btn-primary:active {
+    background-color: #53afdd;
+}
+
+
+/*Login and register only*/
+
+.theme-1 .dummy {
+    height: 25%;
+}
+.theme-1 .user-form label {
+    padding: 0;
+}
+.theme-1 .user-form input[type="text"], .theme-1 .user-form input[type="password"] {
+    border: 1px solid #666a73;
+    border-width: 0px 0px 1px 0px;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+.theme-1 .user-form input[type="text"]:focus, .theme-1 .user-form input[type="password"]:focus  {
+    border: 1px solid #53afdd;
+    border-width: 0px 0px 1px 0px;
+}
+.theme-1 .user-form input[type="submit"] {
+    background-color: #666a73;
+    color: #f4f4f4;
+    border-radius: 0px;
+}
+.theme-1 .user-form input[type="submit"]:active, .theme-1 .user-form input[type="submit"]:hover {
+    background-color: #53afdd;
+}
+
+/*Interface only*/
+
+.theme-1 .content {
+    margin: 0;
+}
+
+/*Chat*/
+
+/*Chat header*/
+.theme-1 .chat .header {
+    font-family: 'SquareFont';
+    margin: 0;
+    background-color: #616672;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #f4f4f4;
+    border-bottom: 2px solid #616672;
+}
+.theme-1 .chat .header a {
+    color: #f4f4f4;
+}
+
+/*Chat messages*/
+.theme-1 .chat .chat-zone {
+    overflow-y: auto;
+    max-height: 83vh;
+    overflow-x: hidden;
+    max-width: 100%;
+    word-wrap:break-word;
+}
+.theme-1 .chat .chat-zone .entity .row {
+    margin: 0;
+}
+.theme-1 .chat .chat-zone .infos {
+    font-weight: bold;
+    font-size: 15px;
+}
+.theme-1 .chat .chat-zone .username {
+    padding: 0;
+}
+
+/*Chat form*/
+.theme-1 .chat .chat-form .smileys {
+    width: 25px;
+    height: 25px;
+    background-image: url(img/smileys.png);
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.theme-1 .chat .chat-form .smileys:hover {
+    cursor: pointer;
+    background-image: url(img/smileyshover.png);
+}
+.theme-1 .chat .chat-form .emoji {
+    cursor: pointer;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+}
+.theme-1 .chat .chat-form .emoji:hover {
+    width: 35px;
+    height: 35px;
+}
+.theme-1 .chat .chat-form .emojis {
+    display: none;
+}
+.theme-1 .chat .chat-form .emojis-box {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #9b9ea5;
+    border-radius: 2px;
+    background-color: #fafafa;
+}
+.theme-1 .chat .chat-form input {
+    border-radius: 3px;
+}
+.theme-1 .chat .chat-form input[type="text"] {
+    border: 1px solid #e4e4e4;
+    background-color: #ffffff;
+    height: 30px;
+    padding: 5px 10px;
+    width: 100%;
+    margin-right: 20px;
+}
+.theme-1 .chat .chat-form input[type="submit"] {
+    font-family: 'SquareFont';
+    background-color: #666a73;
+    border: 0;
+    color: #f4f4f4;
+    height: 30px;
+    padding: 0px 10px;
+}
+.theme-1 .chat .chat-form input[type="submit"]:hover, .theme-1 .chat .chat-form input[type="submit"]:active {
+    background-color: #53afdd;
+}
+
+
+/*Channels*/
+
+.theme-1 .channels .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    color: #f4f4f4;
+}
+
+/*Channels-list*/
+.theme-1 .channels .channels-list {
+    color: #f4f4f4;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.theme-1 .channels .channels-list .channel {
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.theme-1 .channels .channels-list .channel .name:hover {
+    cursor: pointer;
+    color: #9b9ea5;
+}
+.theme-1 .channels .channels-list .channel .glyphicon {
+    padding-right: 7px;
+}
+.theme-1 .channels .channels-list .channel .nb-logged {
+    background-color: #53afdd;
+    color: #f4f4f4;
+    border-radius: 20px;
+    padding: 1px;
+}
+
+/*Users-list*/
+.theme-1 .channels .friends-list {
+    color: #f4f4f4;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.theme-1 .channels .add-friend {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.theme-1 .channels .friends-list .friend {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.theme-1 .channels .friends-list .friend .friend-username:hover {
+    color: #9b9ea5;
+    cursor: pointer;
+}
+.theme-1 .channels .friends-list .friend .online {
+    color: #18de3d;
+}
+.theme-1 .channels .friends-list .friend .offline {
+    color: #e5163a;
+}
+
+/*Current user*/
+.theme-1 .channels .current-user {
+    background-color: #27292e;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.theme-1 .channels .current-user .username {
+    font-size: 20px;
+}
+.theme-1 .channels .current-user .glyphicon {
+    font-size: 25px;
+}
+.theme-1 .channels .current-user .glyphicon:hover {
+    color: #9b9ea5;
+    cursor: pointer;
+}
+
+
+/*Logged*/
+.theme-1 .logged .noice {
+    font-family: 'Avenger';
+    font-size: 3.3vw;
+    color: #41444b;
+}
+
+.theme-1 .logged .logged-zone {
+    color: #f4f4f4;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.theme-1 .logged .logged-zone .one-logged {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+.theme-1 .logged .logged-zone .one-logged .logged-username:hover {
+    color: #9b9ea5;
+    cursor: pointer;
+}
+.theme-1 .logged .logged-zone .one-logged .online {
+    color: #18de3d;
+}
+.theme-1 .logged .logged-zone .one-logged .offline {
+    color: #e5163a;
+}
+
+/*Mixed*/
+.theme-1 .channels, .theme-1 .logged {
+    font-family: 'SquareFont';
+    background-color: #35383f;
+}
+.theme-1 .chat, .theme-1 .logged, .theme-1 .channels {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+}
+.theme-1 .chat-zone, .theme-1 .logged-zone, .theme-1 .add-friend {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+/*Upload drop zone*/
+.jqDropZone {
+    background: lightgrey;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+.jqDropZone.in {
+    width: 600px;
+    height: 200px;
+    line-height: 200px;
+    font-size: larger;
+}
+.jqDropZone.hover {
+    background: lawngreen;
+}
+.jqDropZone.fade {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    opacity: 1;
+}
+
+/*Modals*/
+
+/*Vertically Center*/
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+/*Edit profile modal*/
+#editProfileModal .modal-dialog {
+    width: 50%;
+}
+#editProfileModal .modal-content {
+    background-color: #f4f4f4;
+}
+#editProfileModal input[type="password"] {
+    border: 1px solid #666a73;
+    border-width: 0px 0px 1px 0px;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+#editProfileModal input[type="password"]:focus  {
+    border: 1px solid #53afdd;
+    border-width: 0px 0px 1px 0px;
+}
+
+/*Add friend modal*/
+#addFriendModal .modal-dialog {
+    width: 20%;
+}
+#addFriendModal .modal-content {
+    background-color: #f4f4f4;
+}
+#addFriendModal input[type="text"] {
+    border: 1px solid #666a73;
+    border-width: 0px 0px 1px 0px;
+    background-color: #f4f4f4;
+    padding: 0;
+}
+#addFriendModal input[type="text"]:focus  {
+    border: 1px solid #53afdd;
+    border-width: 0px 0px 1px 0px;
+}
+#addFriendModal button {
+    margin-top: 2px;
+}

@@ -1,0 +1,19 @@
+<template name="view_profile">
+    <div class="modal fade" id="viewProfileModal">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-sm vertical-align-center">
+                <div class="modal-content">
+                    <div class="row text-center">
+                        <div class="col-md-8 col-md-offset-2">
+                            <img src="./img/avatars/{{avatar}}">
+                        </div>
+                    </div>
+                    <h2 class="row text-center">{{username}}</h2>
+                    <div class="row">
+                        <button class="col-md-8 col-md-offset-2 btn btn-primary" data-dismiss="modal"><span class=" glyphicon glyphicon-chevron-left"></span>Back to the chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

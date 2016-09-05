@@ -1,0 +1,23 @@
+<template name="add_friend">
+    <div class="modal fade" id="addFriendModal">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-sm vertical-align-center">
+                <div class="modal-content">
+                    <h2 class="row text-center">Seek for a Friend ?</h2>
+                    <div class="error text-center">{{error}}</div>
+                    <form method="post">
+                        <div class="row">
+                            <label for="friendName" class="col-md-5">Friend's Name</label>
+                            <input type="text" id="friendName" name="friendName" autocomplete="off" class="col-md-6">
+                        </div>
+                    </form>
+                    <div class="results"></div>
+                    <div class="row"></div>
+                    <div class="row">
+                        <button class="col-md-8 col-md-offset-2 btn btn-primary" data-dismiss="modal"><span class=" glyphicon glyphicon-chevron-left"></span>Back to the chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

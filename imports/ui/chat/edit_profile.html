@@ -1,0 +1,49 @@
+<template name="edit_profile">
+    <div class="modal fade" id="editProfileModal">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-sm vertical-align-center">
+                <div class="modal-content">
+                    <div class="row">
+                        <h1 class="row text-center">{{username}}</h1>
+                        <div class="error text-center">{{error}}</div>
+                        <div class="success text-center">{{success}}</div>
+                        <h2 class="row text-center">
+                            Change your password
+                        </h2>
+                        <form method="post">
+                            <div class="row">
+                                <label for="old-password" class="col-md-2 col-md-offset-4">Old password</label>
+                                <input type="password" name="old-password" id="old-password" class="col-md-2">
+                            </div>
+                            <div class="row">
+                                <label for="new-password" class="col-md-2 col-md-offset-4">New Password</label>
+                                <input type="password" name="new-password" id="new-password" class="col-md-2">
+                            </div>
+                            <div class="row">
+                                <label for="verification" class="col-md-2 col-md-offset-4">Verification</label>
+                                <input type="password" name="verification" id="verification" class="col-md-2">
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Change password" class="submit-password-form btn btn-primary col-md-2 col-md-offset-5">
+                            </div>
+                        </form>
+                        <h2 class="row text-center">
+                            Change your avatar
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-1 col-md-offset-3">
+                                <img src="./img/avatars/{{avatar}}">
+                            </div>
+                            <div class="avatar-input col-md-5">
+                                {{> upload_bootstrap callbacks=uploadCallbacks}}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="col-md-2 col-md-offset-1 btn btn-primary" data-dismiss="modal"><span class=" glyphicon glyphicon-chevron-left"></span>Back to the chat</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

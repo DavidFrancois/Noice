@@ -1,0 +1,53 @@
+<template name="interface">
+    <div class="content row">
+        <div class="channels col-md-2">
+            <div class="title">
+                Channels
+            </div>
+            <div class="channels-list">
+                {{#each channels}}
+                {{> channel name=name}}
+                {{/each}}
+            </div>
+            <div class="title">
+                Friends
+            </div>
+            <div class="friends-list">
+                {{#each friends}}
+                {{> friend logged=status.online username=username}}
+                {{/each}}
+            </div>
+            <div class="add-friend">
+                <a class="addFriend text-center" id="addFriend">ADD Friend</a>
+            </div>
+            <div class="current-user row">
+                {{> user}}
+            </div>
+        </div>
+
+        <div class="chat col-md-8">
+            <div class="header row">
+                {{> header}}
+            </div>
+            <div class="chat-zone row">
+                {{#each messages}}
+                {{> message username=authorUsername text=content date=createdAt avatar=authorAvatar}}
+                {{/each}}
+            </div>
+            <div class="chat-form row">
+                {{> editbar}}
+            </div>
+        </div>
+        <div class="logged col-md-2">
+            <div class="title">
+                Subscribers
+            </div>
+            <div class="logged-zone row">
+                {{#each allLogged}}
+                {{> logged logged=status.online username=username}}
+                {{/each}}
+            </div>
+            <div class="noice row text-center">Noice</div>
+        </div>
+    </div>
+</template>
